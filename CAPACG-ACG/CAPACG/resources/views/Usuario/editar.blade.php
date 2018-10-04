@@ -7,7 +7,7 @@
 
 				<div class="panel-body">
 					<form class="form-horizontal" method="POST" action="/usuarios/{{$colaborador->id}}" enctype="multipart/form-data">
-						<input type="hidden" name="_method" value="PUT"> {{ csrf_field() }} @include('partials.crusuario')
+						<input type="hidden" name="_method" value="PUT"> {{ csrf_field() }} @include('partials.crUsuario')
 
 						<div class="form-group{{ $errors->has('Cedula') ? ' has-error' : '' }}">
 							<label for="Cedula" class="col-md-4 control-label">Cédula</label>
